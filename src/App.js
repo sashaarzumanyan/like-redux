@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Likes from "./likes"
+import Title from "./title"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrap">
+        <div className="card">
+          <div className="card-image">
+            <img src="https://assets.cntraveller.in/photos/60b9f47baa65b6af02d24f33/16:9/w_1024%2Cc_limit/indiasurfinglead.jpg" alt="surfing" />
+            <Title />
+            <Likes />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
